@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite parallel="tests" thread-count="1" name="Automation Suite">
+
+    <test parallel="tests" name="TestSuit1">
+        <classes>
+            <class name="Office1"/>
+        </classes>
+    </test>
+    <test parallel="tests" name="TestSuit2">
+        <classes>
+
+        </classes>
+    </test>
+
+</suite>

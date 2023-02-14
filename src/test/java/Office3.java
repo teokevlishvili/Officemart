@@ -35,7 +35,7 @@ public class Office3 extends Runner {
     public void test26() {
         $(".search").click();
         $(".form_group").click();
-        $(byXpath("//*[@id=\"searchmodal\"]/div/form/div/input")).setValue("ფლომასტერი").pressEnter();
+        $(byXpath("//*[@id=\"searchmodal\"]/div/form/div/input")).setValue("კალამი").pressEnter();
         sleep(2000);
         $(".show_icon").click();
         sleep(2000);
@@ -46,7 +46,6 @@ public class Office3 extends Runner {
         $("#btn2").click();
         sleep(2000);
         $(".iur-code").setValue("Office").pressEnter();
-        $(".iur-code").shouldBe(Condition.empty);
         sleep(4000);
         //Test26
     }

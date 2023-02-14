@@ -11,41 +11,52 @@ public class SearchSteps extends SearchPage {
         SearchButton.click();
         return this;
     }
+
     @Step
-    public SearchSteps Searchform(){
+    public SearchSteps Searchform() {
         SearchForm.click();
         return this;
     }
+
     @Step
     public SearchSteps SearchCorrectProduct(String SearchProduct) {
         SearchInput.setValue(SearchProduct).pressEnter();
         return this;
     }
+
     @Step
-    public SearchSteps SearchInCorrectProduct (String SearchIncorrectValue){
+    public SearchSteps SearchInCorrectProduct(String SearchIncorrectValue) {
         SearchIncorrectInput.setValue(SearchIncorrectValue).pressEnter();
         return this;
     }
-    public SearchSteps SearchModel(String SearchValue3){
+
+    public SearchSteps SearchModel(String SearchValue3) {
         SearchPen.setValue(SearchValue3).pressEnter();
         return this;
 
     }
-    public SearchSteps SearchIcons(){
+
+    public SearchSteps SearchIcons() {
         SearchIcon.click();
         return this;
     }
-    public SearchSteps SearchCart(){
+
+    public SearchSteps SearchCart() {
         SearchCartInfo.click();
         return this;
     }
-    public SearchSteps SEARCHQuantity(String Quantity){
+
+    public SearchSteps SEARCHQuantity(String Quantity) {
         SearchQuantity.setValue(Quantity);
         return this;
     }
 
+    public SearchSteps AddCart() {
+        CartAdd.click();
+        return this;
 
     }
+}
 
 
 

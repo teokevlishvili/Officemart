@@ -19,7 +19,11 @@ public class SearchPage {
     SearchCOde = $(byText("#2/505B")),
     SearchQuantity = $(byName("quantity")),
     SearchProductPrice = $(".prod_price"),
-    SearchProductFullPrice = $(".fullPriceFor");
+
+    SearchProductFullPrice = $(".fullPriceFor"),
+    CartAdd = $(byXpath("/html/body/div[5]/div[2]/div/div[4]/div[3]/div[2]/div[2]/a/img[1]"));
+
+
 
 
     }

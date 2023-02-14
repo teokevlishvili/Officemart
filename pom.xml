@@ -41,7 +41,17 @@
             <artifactId>allure-testng</artifactId>
             <version>2.20.1</version>
         </dependency>
+        <dependency>
+            <groupId>de.monochromata.contract</groupId>
+            <artifactId>java-contract</artifactId>
+            <version>18.2.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.apache.httpcomponents.core5</groupId>
+            <artifactId>httpcore5</artifactId>
+            <version>5.2</version>
+        </dependency>
 
 
     </dependencies>

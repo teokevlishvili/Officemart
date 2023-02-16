@@ -1,8 +1,12 @@
 package StepObject;
 
 import PageObject.CompanyPage;
+import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 
+import java.time.Duration;
+
+import static DataObject.CompanyData.InCorrectMailValue3;
 import static java.awt.Color.red;
 
 public class CompanySteps extends CompanyPage {
@@ -13,9 +17,8 @@ public class CompanySteps extends CompanyPage {
 
     }
 
-    public CompanySteps CompanyName() {
+    public void CompanyName() {
         CompanyForm.getCssValue(String.valueOf(red));
-        return this;
 
     }
 
@@ -87,4 +90,29 @@ public class CompanySteps extends CompanyPage {
         CompanyCorrectP.setValue( CompanyCorrectPhoneValue).pressEnter();
         return this;
     }
+    public CompanySteps CompanyIncorrectDate(String IncorrectDateValue){
+        CompanyDate.setValue(IncorrectDateValue).pressEnter().getCssValue(String.valueOf(red));
+        return this;
+    }
+    public CompanySteps CompanyCorrectDate(String CorrectDateValue){
+        CompanyDate.setValue(CorrectDateValue).shouldBe(Condition.visible, Duration.ofMillis(3000));
+        return this;
 }
+    public CompanySteps CompanyCorrectMail(String CorrectMailValue){
+        CompanyMail.setValue(CorrectMailValue).shouldBe(Condition.visible, Duration.ofMillis(3000));
+        return this;
+    }
+    public CompanySteps CompanyInCorrectMail(String InCorrectMailValue1){
+        CompanyMail.setValue(InCorrectMailValue1).pressEnter();
+        return this;
+}
+    public CompanySteps CompanyInCorrectMail1(String InCorrectMailValue2) {
+        CompanyMail.setValue(InCorrectMailValue2).pressEnter();
+        return this;
+    }
+    public CompanySteps CompanyInCorrectMail2(String InCorrectMailValue3){
+        CompanyMail.setValue(InCorrectMailValue3).pressEnter();
+        return this;
+}}
+
+

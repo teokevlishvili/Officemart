@@ -24,6 +24,9 @@ public class CompanyPage {
     CompanyIncorrectP1=$(".iur-phone"),
     CompanyIncorrectP2=$(".iur-phone"),
     CompanyIncorrectP3=$(".iur-phone"),
-    CompanyCorrectP=$(".iur-phone");
+    CompanyCorrectP=$(".iur-phone"),
+    CompanyDate = $(".iur_date"),
+    CompanyMail = $(byName("email"));
+
 
 }

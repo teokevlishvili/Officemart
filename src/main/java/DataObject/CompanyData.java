@@ -11,7 +11,13 @@ public interface CompanyData {
          CompanyIncorrectPhoneValue1 = "nomeri",
          CompanyIncorrectPhoneValue2 = "12345678",
          CompanyIncorrectPhoneValue3 = "123456789012",
-         CompanyCorrectPhoneValue = "555123456";
+         CompanyCorrectPhoneValue = "555123456",
+         IncorrectDateValue = "simb",
+         CorrectDateValue = "1 მარტი",
+         CorrectMailValue = "test@gmail.com",
+         InCorrectMailValue1 = "test.gmail.com",
+         InCorrectMailValue2 = "test@gmail",
+         InCorrectMailValue3="test.gmail@";
 
 
 

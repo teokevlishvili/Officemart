@@ -16,6 +16,7 @@ import static java.awt.Color.red;
 
 public class Office1 extends Runner {
 
+
     @Test
     public void Search() {
         SearchSteps steps = new SearchSteps();
@@ -67,19 +68,6 @@ public class Office1 extends Runner {
                 .SearchIcons();
         sleep(4000);
 
-    }
-
-    @Test
-    public void test5() {
-
-        $(".search").click();
-        $(".form_group").click();
-        $(byXpath("//*[@id=\"searchmodal\"]/div/form/div/input")).setValue("კალამი").pressEnter();
-        sleep(2000);
-        $(".show_icon").click();
-        $(".cart_info").click();
-        Assert.assertTrue($(byText("დასახელება")).isDisplayed());
-        sleep(5000);
     }
 
     @Test
@@ -867,4 +855,124 @@ public class Office1 extends Runner {
         steps2
                 .CompanyCorrectPhoneNumber(CompanyCorrectPhoneValue);
         sleep(2000);
+    }
+    @Test
+    public void Test35() {
+        SearchSteps steps = new SearchSteps();
+        steps
+                .GotoSearchPage()
+                .Searchform()
+                .SearchModel(SearchValue3)
+                .SearchIcons()
+                .AddCart()
+                .SearchCart();
+        CartSteps steps1 = new CartSteps();
+        steps1
+                .Continue();
+        CompanySteps steps2 = new CompanySteps();
+        steps2
+                .CompanyIncorrectDate(IncorrectDateValue);
+        String.valueOf(red);
+
+}
+    @Test
+    public void Test36() {
+        SearchSteps steps = new SearchSteps();
+        steps
+                .GotoSearchPage()
+                .Searchform()
+                .SearchModel(SearchValue3)
+                .SearchIcons()
+                .AddCart()
+                .SearchCart();
+        CartSteps steps1 = new CartSteps();
+        steps1
+                .Continue();
+        CompanySteps steps2 = new CompanySteps();
+        steps2
+                .CompanyCorrectDate(CorrectDateValue);
+        Assert.assertTrue(steps2.CompanyDate.is(Condition.visible));
+        sleep(4000);
+    }
+    @Test
+    public void Test37() {
+        SearchSteps steps = new SearchSteps();
+        steps
+                .GotoSearchPage()
+                .Searchform()
+                .SearchModel(SearchValue3)
+                .SearchIcons()
+                .AddCart()
+                .SearchCart();
+        CartSteps steps1 = new CartSteps();
+        steps1
+                .Continue();
+        CompanySteps steps2 = new CompanySteps();
+        steps2
+                .CompanyCorrectMail(CorrectMailValue);
+        Assert.assertTrue(steps2.CompanyDate.is(Condition.visible));
+        sleep(4000);
+}
+    @Test
+    public void Test38() {
+        SearchSteps steps = new SearchSteps();
+        steps
+                .GotoSearchPage()
+                .Searchform()
+                .SearchModel(SearchValue3)
+                .SearchIcons()
+                .AddCart()
+                .SearchCart();
+        CartSteps steps1 = new CartSteps();
+        steps1
+                .Continue();
+        CompanySteps steps2 = new CompanySteps();
+        steps2
+                .CompanyInCorrectMail(InCorrectMailValue1);
+        Assert.assertTrue(steps2.CompanyDate.is(Condition.visible));
+        sleep(4000);
+    }
+    @Test
+    public void Test39() {
+        SearchSteps steps = new SearchSteps();
+        steps
+                .GotoSearchPage()
+                .Searchform()
+                .SearchModel(SearchValue3)
+                .SearchIcons()
+                .AddCart()
+                .SearchCart();
+        CartSteps steps1 = new CartSteps();
+        steps1
+                .Continue();
+        CompanySteps steps2 = new CompanySteps();
+        steps2
+                .CompanyInCorrectMail1(InCorrectMailValue2);
+        Assert.assertTrue(steps2.CompanyDate.is(Condition.visible));
+        sleep(4000);
+}
+    @Test
+    public void Test40() {
+        SearchSteps steps = new SearchSteps();
+        steps
+                .GotoSearchPage()
+                .Searchform()
+                .SearchModel(SearchValue3)
+                .SearchIcons()
+                .AddCart()
+                .SearchCart();
+        CartSteps steps1 = new CartSteps();
+        steps1
+                .Continue();
+        CompanySteps steps2 = new CompanySteps();
+        steps2
+                .CompanyName(CompanyValue)
+                .CompanyCorrectCode(CorrectCode)
+                .CompanyAddres(CompanyAdd)
+                .CompanyCorrectPhoneNumber(CompanyCorrectPhoneValue)
+                .CompanyCorrectDate(CorrectDateValue)
+                .CompanyInCorrectMail2(InCorrectMailValue3);
+        Assert.assertTrue(steps2.CompanyDate.is(Condition.visible));
+        sleep(4000);
     }}
+

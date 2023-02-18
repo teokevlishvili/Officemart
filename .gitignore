@@ -1,5 +1,8 @@
 .idea
-.Build
+build
+allure-results
+target
+
 
 
 ### IntelliJ IDEA ###

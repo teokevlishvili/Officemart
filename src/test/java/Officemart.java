@@ -6,7 +6,6 @@ import com.codeborne.selenide.Condition;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import java.time.Duration;
-
 import static DataObject.CompanyData.*;
 import static DataObject.SearchData.*;
 import static com.codeborne.selenide.Selectors.*;
@@ -14,7 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static java.awt.Color.red;
 
 
-public class Office1 extends Runner {
+public class Officemart extends Runner {
 
 
     @Test

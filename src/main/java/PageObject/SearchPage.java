@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class SearchPage {
     public SelenideElement
-    SearchButton = $(".search"),
+    SearchButton = $(".fa-search"),
     SearchForm = $(".form_group"),
     SearchInput = $(byXpath("//*[@id=\"searchmodal\"]/div/form/div/input")),
     SearchIncorrectInput = $(byXpath("//*[@id=\"searchmodal\"]/div/form/div/input")),

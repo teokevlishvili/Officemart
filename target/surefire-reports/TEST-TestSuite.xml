@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="73.107" tests="13" errors="0" skipped="0" failures="12">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="166.905" tests="5" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -60,257 +60,77 @@
     <property name="library.jansi.path" value="C:/Program Files/apache-maven-3.8.7-bin/apache-maven-3.8.7/lib/jansi-native"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="Search" classname="Office1" time="3.366"/>
-  <testcase name="Test2" classname="Office1" time="5.557">
-    <failure message="Invalid element state [.search]: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286195647.0.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286195647.0.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
-Invalid element state [.search]: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286195647.0.png
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286195647.0.html
+  <testcase name="Search" classname="Officemart" time="2.393"/>
+  <testcase name="Test10" classname="Officemart" time="6.388">
+    <failure message="Invalid element state [.fa-search]: element click intercepted: Element &lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt; is not clickable at point (1387, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676743342478.0.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676743342478.0.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;i class=&quot;fas fa-search&quot;&gt;&lt;/i&gt; is not clickable at point (1387, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
+Invalid element state [.fa-search]: element click intercepted: Element <i class="fas fa-search"></i> is not clickable at point (1387, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
+Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676743342478.0.png
+Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676743342478.0.html
 Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-	at Office1.Test2(Office1.java:26)
+Caused by: ElementClickInterceptedException: element click intercepted: Element <i class="fas fa-search"></i> is not clickable at point (1387, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
+	at Officemart.Test10(Officemart.java:143)
 Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-  (Session info: chrome=109.0.5414.120)
+element click intercepted: Element <i class="fas fa-search"></i> is not clickable at point (1387, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
+  (Session info: chrome=109.0.5414.122)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, clickElement {id=259a2417-ac7f-4e71-aa3b-0a05b3f48fb0}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (db19b51aa582ddb02f292bceb659c89d)] -> css selector: .search]
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.Test2(Office1.java:26)
+Command: [e5ed24a622d9b93b3ddd4732b5571917, clickElement {id=8a73381c-b2e4-49fd-afaf-95a50a95fdce}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58894/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e5ed24a622d9b93b3ddd4732b5571917)] -> css selector: .fa-search]
+Session ID: e5ed24a622d9b93b3ddd4732b5571917
+	at Officemart.Test10(Officemart.java:143)
 ]]></failure>
   </testcase>
-  <testcase name="Test3" classname="Office1" time="5.495">
-    <failure message="Invalid element state [.search]: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286201097.1.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286201097.1.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
-Invalid element state [.search]: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286201097.1.png
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286201097.1.html
+  <testcase name="Test11" classname="Officemart" time="5.845"/>
+  <testcase name="Test12" classname="Officemart" time="81.46">
+    <failure message="WebDriverException: disconnected: unable to send message to renderer&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676743366733.1.html&#10;Timeout: 4 s.&#10;Caused by: WebDriverException: disconnected: unable to send message to renderer" type="com.codeborne.selenide.ex.UIAssertionError">com.codeborne.selenide.ex.UIAssertionError: 
+WebDriverException: disconnected: unable to send message to renderer
+Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676743366733.1.html
 Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-	at Office1.Test3(Office1.java:37)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-  (Session info: chrome=109.0.5414.120)
+Caused by: WebDriverException: disconnected: unable to send message to renderer
+	at Officemart.Test12(Officemart.java:176)
+Caused by: org.openqa.selenium.WebDriverException: 
+disconnected: unable to send message to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=109.0.5414.122)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, clickElement {id=259a2417-ac7f-4e71-aa3b-0a05b3f48fb0}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (db19b51aa582ddb02f292bceb659c89d)] -> css selector: .search]
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.Test3(Office1.java:37)
-]]></failure>
-  </testcase>
-  <testcase name="Test4" classname="Office1" time="6.81">
-    <failure message="Invalid element state [.search]: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286206598.2.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286206598.2.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
-Invalid element state [.search]: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286206598.2.png
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286206598.2.html
-Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-	at Office1.Test4(Office1.java:59)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, clickElement {id=259a2417-ac7f-4e71-aa3b-0a05b3f48fb0}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (db19b51aa582ddb02f292bceb659c89d)] -> css selector: .search]
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.Test4(Office1.java:59)
-]]></failure>
-  </testcase>
-  <testcase name="Test5" classname="Office1" time="5.439">
-    <failure message="Invalid element state [.search]: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286213392.3.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286213392.3.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
-Invalid element state [.search]: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286213392.3.png
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286213392.3.html
-Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-	at Office1.Test5(Office1.java:83)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, clickElement {id=259a2417-ac7f-4e71-aa3b-0a05b3f48fb0}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (db19b51aa582ddb02f292bceb659c89d)] -> css selector: .search]
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.Test5(Office1.java:83)
-]]></failure>
-  </testcase>
-  <testcase name="Test6" classname="Office1" time="6.483">
-    <failure message="Invalid element state [.search]: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286218823.4.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286218823.4.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
-Invalid element state [.search]: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286218823.4.png
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286218823.4.html
-Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-	at Office1.Test6(Office1.java:109)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, clickElement {id=259a2417-ac7f-4e71-aa3b-0a05b3f48fb0}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (db19b51aa582ddb02f292bceb659c89d)] -> css selector: .search]
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.Test6(Office1.java:109)
-]]></failure>
-  </testcase>
-  <testcase name="test10" classname="Office1" time="5.318">
-    <failure message="Invalid element state [.search]: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286225337.5.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286225337.5.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
-Invalid element state [.search]: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286225337.5.png
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286225337.5.html
-Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-	at Office1.test10(Office1.java:157)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, clickElement {id=259a2417-ac7f-4e71-aa3b-0a05b3f48fb0}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (db19b51aa582ddb02f292bceb659c89d)] -> css selector: .search]
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.test10(Office1.java:157)
-]]></failure>
-  </testcase>
-  <testcase name="test4" classname="Office1" time="5.882">
-    <failure message="Invalid element state [.search]: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;&#10;Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286230660.6.png&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286230660.6.html&#10;Timeout: 4 s.&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;search&quot;&gt;...&lt;/div&gt; is not clickable at point (1455, 23). Other element would receive the click: &lt;div class=&quot;modal-overlay&quot; style=&quot;z-index: 1002; display: block; opacity: 0.5;&quot;&gt;&lt;/div&gt;" type="com.codeborne.selenide.ex.InvalidStateException"><![CDATA[com.codeborne.selenide.ex.InvalidStateException: 
-Invalid element state [.search]: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-Screenshot: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286230660.6.png
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286230660.6.html
-Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-	at Office1.test4(Office1.java:47)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <div class="search">...</div> is not clickable at point (1455, 23). Other element would receive the click: <div class="modal-overlay" style="z-index: 1002; display: block; opacity: 0.5;"></div>
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, clickElement {id=259a2417-ac7f-4e71-aa3b-0a05b3f48fb0}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (db19b51aa582ddb02f292bceb659c89d)] -> css selector: .search]
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.test4(Office1.java:47)
-]]></failure>
-  </testcase>
-  <testcase name="test5" classname="Office1" time="5.377">
-    <failure message="Element not found {.form_group}&#10;Expected: interactable&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286236965.7.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchWindowException: no such window: target window already closed" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {.form_group}
-Expected: interactable
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286236965.7.html
-Timeout: 4 s.
-Caused by: NoSuchWindowException: no such window: target window already closed
-	at Office1.test5(Office1.java:71)
-Caused by: org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, findElement {using=css selector, value=.form_group}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.test5(Office1.java:71)
+Command: [e5ed24a622d9b93b3ddd4732b5571917, clickElement {id=c9de487c-cd7f-4669-ae5b-ae092b700524}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58894/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (e5ed24a622d9b93b3ddd4732b5571917)] -> css selector: .form_group]
+Session ID: e5ed24a622d9b93b3ddd4732b5571917
+	at Officemart.Test12(Officemart.java:176)
 </failure>
+    <system-err><![CDATA[[1676743354.579][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743362.657][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743370.746][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743378.818][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743386.896][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743395.263][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743403.343][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743411.429][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743419.502][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743427.577][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
   </testcase>
-  <testcase name="test6" classname="Office1" time="4.176">
-    <failure message="Element not found {.search}&#10;Expected: interactable&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286241145.8.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchWindowException: no such window: target window already closed" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {.search}
-Expected: interactable
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286241145.8.html
-Timeout: 4 s.
-Caused by: NoSuchWindowException: no such window: target window already closed
-	at Office1.test6(Office1.java:96)
-Caused by: org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
+  <testcase name="Test12" classname="Officemart" time="113.83">
+    <failure message="disconnected: unable to connect to renderer&#10;  (failed to check if window was closed: disconnected: unable to connect to renderer)&#10;  (Session info: chrome=109.0.5414.122)&#10;Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e5ed24a622d9b93b3ddd4732b5571917, screenshot {}]&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58894/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e5ed24a622d9b93b3ddd4732b5571917" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=109.0.5414.122)
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, findElement {using=css selector, value=.search}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.test6(Office1.java:96)
+Command: [e5ed24a622d9b93b3ddd4732b5571917, screenshot {}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58894}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58894/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e5ed24a622d9b93b3ddd4732b5571917
 </failure>
-  </testcase>
-  <testcase name="test7" classname="Office1" time="4.146">
-    <failure message="Element not found {.search}&#10;Expected: interactable&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286245293.9.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchWindowException: no such window: target window already closed" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {.search}
-Expected: interactable
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286245293.9.html
-Timeout: 4 s.
-Caused by: NoSuchWindowException: no such window: target window already closed
-	at Office1.test7(Office1.java:120)
-Caused by: org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, findElement {using=css selector, value=.search}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.test7(Office1.java:120)
-</failure>
-  </testcase>
-  <testcase name="test8" classname="Office1" time="4.154">
-    <failure message="Element not found {.search}&#10;Expected: interactable&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286249447.10.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchWindowException: no such window: target window already closed" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {.search}
-Expected: interactable
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286249447.10.html
-Timeout: 4 s.
-Caused by: NoSuchWindowException: no such window: target window already closed
-	at Office1.test8(Office1.java:133)
-Caused by: org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, findElement {using=css selector, value=.search}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.test8(Office1.java:133)
-</failure>
-  </testcase>
-  <testcase name="test9" classname="Office1" time="4.154">
-    <failure message="Element not found {.search}&#10;Expected: interactable&#10;Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286253603.11.html&#10;Timeout: 4 s.&#10;Caused by: NoSuchWindowException: no such window: target window already closed" type="com.codeborne.selenide.ex.ElementNotFound">com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {.search}
-Expected: interactable
-Page source: file:/C:/Users/99559/Desktop/Officemart/build/reports/tests/1676286253603.11.html
-Timeout: 4 s.
-Caused by: NoSuchWindowException: no such window: target window already closed
-	at Office1.test9(Office1.java:145)
-Caused by: org.openqa.selenium.NoSuchWindowException: 
-no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=109.0.5414.120)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [db19b51aa582ddb02f292bceb659c89d, findElement {using=css selector, value=.search}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\99559\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60460/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db19b51aa582ddb02f292bceb659c89d
-	at Office1.test9(Office1.java:145)
-</failure>
+    <system-err><![CDATA[[1676743435.664][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743443.763][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743451.860][WARNING]: Timed out connecting to Chrome, retrying...
+[1676743459.948][WARNING]: Timed out connecting to Chrome, retrying...
+]]></system-err>
   </testcase>
 </testsuite>

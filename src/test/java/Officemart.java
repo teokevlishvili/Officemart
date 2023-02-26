@@ -18,7 +18,7 @@ import static java.awt.Color.red;
 public class Officemart extends Runner {
 
     @Test(retryAnalyzer = Retry.class)
-    @Description("click search button")
+    @Description("Test Case N1,click search button")
     public void Search() {
         SearchSteps steps = new SearchSteps();
         steps.GotoSearchPage();
@@ -26,7 +26,7 @@ public class Officemart extends Runner {
     }
 
     @Test(priority = 1)
-    @Description("search correct item")
+    @Description("Test Case N2,search correct item")
     public void Test2() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -36,7 +36,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("search incorrect item")
+    @Description("Test Case N3,search incorrect item")
     public void Test3() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -48,7 +48,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("The product has been successfully added to the cart")
+    @Description("Test Case N4,The product has been successfully added to the cart")
     public void Test4() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -61,7 +61,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("Added product name")
+    @Description("Test Case N5,Added product name")
     public void Test5() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -76,7 +76,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("Added product color")
+    @Description("Test Case N6 Added product color")
     public void Test6() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -90,7 +90,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("Added product code")
+    @Description("Test Case N7 Added product code")
     public void Test7() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -105,7 +105,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("Quantity of product added")
+    @Description("Test Case N8 Quantity of product added")
     public void Test8() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -120,7 +120,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("Added product price")
+    @Description("Test Case N9 Added product price")
     public void Test9() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -134,7 +134,7 @@ public class Officemart extends Runner {
     }
 
     @Test
-    @Description("The sum of the product added")
+    @Description("Test Case N10 The sum of the product added")
     public void Test10() {
         SearchSteps steps = new SearchSteps();
         steps

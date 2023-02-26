@@ -1,2 +1,0 @@
-# Officemart
-# Smart Academy Practice

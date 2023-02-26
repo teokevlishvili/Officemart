@@ -15,7 +15,7 @@ import static java.awt.Color.red;
 public class OfficemartCompany extends Runner {
 
     @Test
-    @Description("There should be two forms 'legal entities' and 'natural entities' ")
+    @Description("Test Case N18 There should be two forms 'legal entities' and 'natural entities' ")
     public void Test18() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -33,7 +33,7 @@ public class OfficemartCompany extends Runner {
     }
 
     @Test
-    @Description("company name")
+    @Description("Test Case N19 company name")
     public void Test19() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -51,11 +51,11 @@ public class OfficemartCompany extends Runner {
                 .CompanyButton()
                 .CompanyName();
         String.valueOf(red);
-        sleep(3000);
+
     }
 
     @Test
-    @Description("Identification Code")
+    @Description("Test Case N20 Identification Code")
     public void Test20() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -73,10 +73,10 @@ public class OfficemartCompany extends Runner {
                 .CompanyButton()
                 .CompanyCode();
         String.valueOf(red);
-        sleep(3000);
+
     }
     @Test
-    @Description("Company address")
+    @Description("Test Case N21 Company address")
     public void Test21() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -94,12 +94,12 @@ public class OfficemartCompany extends Runner {
                 .CompanyButton()
                 .CompanyADDress();
         String.valueOf(red);
-        sleep(3000);
+
 
     }
 
     @Test
-    @Description("Company phone Number")
+    @Description("Test Case N22 Company phone Number")
     public void Test22() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -121,7 +121,7 @@ public class OfficemartCompany extends Runner {
     }
 
     @Test
-    @Description("The box When do you want to receive the order? should turn red.")
+    @Description("Test Case N23 The box When do you want to receive the order? should turn red.")
     public void Test23() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -143,7 +143,7 @@ public class OfficemartCompany extends Runner {
     }
 
     @Test
-    @Description("Company Email")
+    @Description("Test Case N24 Company Email")
     public void Test24() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -165,7 +165,7 @@ public class OfficemartCompany extends Runner {
     }
 
     @Test
-    @Description("Company Name ")
+    @Description("Test Case N25 Company Name ")
     public void Test25() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -187,7 +187,7 @@ public class OfficemartCompany extends Runner {
     }
 
     @Test
-    @Description("No value should be entered")
+    @Description("Test Case N26 No value should be entered")
     public void Test26() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -208,7 +208,7 @@ public class OfficemartCompany extends Runner {
     }
 
     @Test
-    @Description("The field 'Identification code' should be red")
+    @Description("Test Case N27 The field 'Identification code' should be red")
     public void Test27() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -229,7 +229,7 @@ public class OfficemartCompany extends Runner {
     }
 
     @Test
-    @Description("You must enter at least 11 characters in the field")
+    @Description("Test Case N28 You must enter at least 11 characters in the field")
     public void Test28() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -249,7 +249,7 @@ public class OfficemartCompany extends Runner {
         sleep(3000);
     }
     @Test
-    @Description("The field should no longer be red")
+    @Description("Test Case N29 The field should no longer be red")
     public void Test29() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -269,7 +269,7 @@ public class OfficemartCompany extends Runner {
         sleep(3000);
     }
     @Test
-    @Description("The field should no longer be red")
+    @Description("Test Case N30 The field should no longer be red")
     public void Test30() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -288,7 +288,7 @@ public class OfficemartCompany extends Runner {
         sleep(2000);
     }
     @Test
-    @Description("No value should be entered in the field")
+    @Description("Test Case N31 No value should be entered in the field")
     public void Test31() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -307,7 +307,7 @@ public class OfficemartCompany extends Runner {
         sleep(2000);
     }
     @Test
-    @Description("The field 'Contact number' should turn red")
+    @Description("Test Case N32 The field 'Contact number' should turn red")
     public void Test32() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -326,7 +326,7 @@ public class OfficemartCompany extends Runner {
         sleep(2000);
     }
     @Test
-    @Description("At least 9 characters must be entered in the field")
+    @Description("Test Case N33 At least 9 characters must be entered in the field")
     public void Test33() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -345,7 +345,7 @@ public class OfficemartCompany extends Runner {
         sleep(2000);
     }
     @Test
-    @Description("The field should no longer be red")
+    @Description("Test Case N34 The field should no longer be red")
     public void Test34() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -364,7 +364,7 @@ public class OfficemartCompany extends Runner {
         sleep(2000);
     }
     @Test
-    @Description("Field When do you want to receive the order? should remain red")
+    @Description("Test Case N35 Field When do you want to receive the order? should remain red")
     public void Test35() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -384,7 +384,7 @@ public class OfficemartCompany extends Runner {
 
     }
     @Test
-    @Description("The field should no longer be red")
+    @Description("Test Case N36 The field should no longer be red")
     public void Test36() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -404,7 +404,7 @@ public class OfficemartCompany extends Runner {
         sleep(4000);
     }
     @Test
-    @Description("The field should no longer be red")
+    @Description("Test Case N37 The field should no longer be red")
     public void Test37() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -424,7 +424,7 @@ public class OfficemartCompany extends Runner {
         sleep(4000);
     }
     @Test
-    @Description("The 'E-mail' field should remain red")
+    @Description("Test Case N38 The 'E-mail' field should remain red")
     public void Test38() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -444,7 +444,7 @@ public class OfficemartCompany extends Runner {
         sleep(4000);
     }
     @Test
-    @Description("The 'E-mail' field should remain red")
+    @Description("Test Case N39 The 'E-mail' field should remain red")
     public void Test39() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -464,7 +464,7 @@ public class OfficemartCompany extends Runner {
         sleep(4000);
     }
     @Test
-    @Description("The 'E-mail' field should remain red")
+    @Description("Test Case N40 The 'E-mail' field should remain red")
     public void Test40() {
         SearchSteps steps = new SearchSteps();
         steps

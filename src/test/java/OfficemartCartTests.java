@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.sleep;
 @Listeners(Utils.TestLister.class)
 public class OfficemartCartTests extends Runner {
     @Test
-    @Description("total value")
+    @Description("Test Case N11 total value")
     public void Test11() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -30,7 +30,7 @@ public class OfficemartCartTests extends Runner {
     }
 
     @Test
-    @Description("total value")
+    @Description("Test Case N12 total value")
     public void Test12() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -47,7 +47,7 @@ public class OfficemartCartTests extends Runner {
 
     }
     @Test
-    @Description("The product disappears from the cart")
+    @Description("Test Case N13 The product disappears from the cart")
     public void Test13() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -62,7 +62,7 @@ public class OfficemartCartTests extends Runner {
     }
 
     @Test
-    @Description("Clear Cart")
+    @Description("Test Case N14 Clear Cart")
     public void Test14() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -79,7 +79,7 @@ public class OfficemartCartTests extends Runner {
     }
 
     @Test
-    @Description("The cart is empty")
+    @Description("Test Case N15 The cart is empty")
     public void Test15() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -97,7 +97,7 @@ public class OfficemartCartTests extends Runner {
     }
 
     @Test
-    @Description("Continue button disappeared")
+    @Description("Test Case N16 Continue button disappeared")
     public void Test16() {
         SearchSteps steps = new SearchSteps();
         steps
@@ -115,7 +115,7 @@ public class OfficemartCartTests extends Runner {
     }
 
     @Test
-    @Description("Clear Cart button is gone")
+    @Description("Test Case N17 Clear Cart button is gone")
     public void Test17() {
         SearchSteps steps = new SearchSteps();
         steps

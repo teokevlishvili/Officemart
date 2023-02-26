@@ -4,15 +4,31 @@
 
 <suite parallel="tests" thread-count="1" name="Automation Suite">
 
-    <test parallel="tests" name="TestSuit1">
+    <test  name="TestSuit1">
         <classes>
             <class name="Officemart"/>
         </classes>
     </test>
-    <test parallel="tests" name="TestSuit2">
+    <test
+          name="Search">
+        <classes>
+
+        </classes>
+    </test>
+    <test
+            name="Test2">
+        <classes>
+
+        </classes>
+    </test>
+    <test
+            name="Test3">
         <classes>
 
         </classes>
     </test>
 
+
+
 </suite>
+

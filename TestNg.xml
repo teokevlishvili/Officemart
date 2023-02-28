@@ -1,34 +1,20 @@
-<?xml version="1.0"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite parallel="tests" thread-count="1" name="Automation Suite">
-
-    <test  name="TestSuit1">
+<suite name="officemart Test Suite" verbose="1" thread-count="3" parallel="tests">
+    <test name="officemart Search function" group-by-instances="true" thread-count="1">
         <classes>
             <class name="Officemart"/>
         </classes>
     </test>
-    <test
-          name="Search">
+    <test name="officemart Cart Page" group-by-instances="true" thread-count="1">
         <classes>
-
+            <class name="OfficemartCartTests"/>
         </classes>
     </test>
-    <test
-            name="Test2">
+    <test name="officemart Purchase Page" group-by-instances="true" thread-count="1">
         <classes>
-
+            <class name="OfficemartCompany"/>
         </classes>
     </test>
-    <test
-            name="Test3">
-        <classes>
-
-        </classes>
-    </test>
-
-
-
 </suite>
-

@@ -12,7 +12,6 @@ public class Runner {
     public static void setup(){
         Configuration.browserSize = "1920x1080";
         open("https://officemart.ge/ge");
-
     }
     @AfterTest
     public static void tearDown(){

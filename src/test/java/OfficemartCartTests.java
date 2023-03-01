@@ -131,4 +131,21 @@ public class OfficemartCartTests extends Runner {
         Assert.assertTrue(steps1.CartClean.is(Condition.disappear));
         sleep(4000);
     }
+    @Test
+    @Description("Test Case N18 There should be two forms 'legal entities' and 'natural entities' ")
+    public void Test18() {
+        SearchSteps steps = new SearchSteps();
+        steps
+                .GotoSearchPage()
+                .Searchform()
+                .SearchModel(SearchValue3)
+                .SearchIcons()
+                .AddCart()
+                .SearchCart();
+        CartSteps steps1 = new CartSteps();
+        steps1
+                .Continue();
+        sleep(4000);
+
+    }
 }

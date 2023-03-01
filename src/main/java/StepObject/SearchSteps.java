@@ -1,12 +1,12 @@
 package StepObject;
 
 import PageObject.SearchPage;
-import io.qameta.allure.Step;
+import io.qameta.allure.*;
 
 
 public class SearchSteps extends SearchPage {
 
-@Step("click search button")
+    @Step("click search button")
     public SearchSteps GotoSearchPage() {
         SearchButton.click();
         return this;
@@ -35,22 +35,22 @@ public class SearchSteps extends SearchPage {
         return this;
 
     }
-
+    @Step("The product has been successfully added to the cart")
     public SearchSteps SearchIcons() {
         SearchIcon.click();
         return this;
     }
-
+    @Step
     public SearchSteps SearchCart() {
         SearchCartInfo.click();
         return this;
     }
-@Step("search item quantity")
+    @Step("search item quantity")
     public SearchSteps SEARCHQuantity(String Quantity) {
         SearchQuantity.setValue(Quantity);
         return this;
     }
-
+    @Step("item price")
     public SearchSteps AddCart() {
         CartAdd.click();
         return this;

@@ -56,7 +56,6 @@ public class Officemart extends Runner {
                 .Searchform()
                 .SearchModel(SearchValue3)
                 .SearchIcons();
-        sleep(4000);
 
     }
 
@@ -71,7 +70,6 @@ public class Officemart extends Runner {
                 .SearchIcons()
                 .SearchCart();
         Assert.assertTrue(steps.SearchCartName.isDisplayed());
-        sleep(3000);
 
     }
 
@@ -86,7 +84,6 @@ public class Officemart extends Runner {
                 .SearchIcons()
                 .SearchCart();
         Assert.assertTrue(steps.SearchCartColor.isDisplayed());
-        sleep(3000);
     }
 
     @Test
@@ -100,7 +97,6 @@ public class Officemart extends Runner {
                 .SearchIcons()
                 .SearchCart();
         Assert.assertTrue(steps.SearchCOde.is(Condition.visible));
-        sleep(3000);
 
     }
 
@@ -116,7 +112,7 @@ public class Officemart extends Runner {
                 .SearchCart()
                 .SEARCHQuantity(Quantity);
         Assert.assertTrue(steps.SearchQuantity.isDisplayed());
-        sleep(3000);
+
     }
 
     @Test
@@ -130,7 +126,7 @@ public class Officemart extends Runner {
                 .SearchIcons()
                 .SearchCart();
         Assert.assertTrue(steps.SearchProductPrice.is(Condition.visible));
-        sleep(3000);
+
     }
 
     @Test
@@ -144,7 +140,6 @@ public class Officemart extends Runner {
                 .SearchIcons()
                 .SearchCart();
         Assert.assertTrue(steps.SearchProductFullPrice.is(Condition.visible));
-        sleep(3000);
 
     }
 }

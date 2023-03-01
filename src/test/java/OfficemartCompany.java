@@ -117,7 +117,7 @@ public class OfficemartCompany extends Runner {
                 .CompanyButton()
                 .CompanyMobile();
         String.valueOf(red);
-        sleep(3000);
+        sleep(1000);
     }
 
     @Test
@@ -139,7 +139,7 @@ public class OfficemartCompany extends Runner {
                 .CompanyButton()
                 .CompanyDate();
         String.valueOf(red);
-        sleep(3000);
+        sleep(1000);
     }
 
     @Test
@@ -161,7 +161,7 @@ public class OfficemartCompany extends Runner {
                 .CompanyButton()
                 .CompanyEmail();
         String.valueOf(red);
-        sleep(3000);
+
     }
 
     @Test
@@ -183,7 +183,7 @@ public class OfficemartCompany extends Runner {
                 .CompanyButton()
                 .CompanyName(CompanyValue)
                 .CompanyButton();
-        sleep(4000);
+
     }
 
     @Test
@@ -204,7 +204,7 @@ public class OfficemartCompany extends Runner {
         steps2
                 .CompanyIncorrect(IncorrectValue)
                 .CompanyButton();
-        sleep(4000);
+
     }
 
     @Test
@@ -225,7 +225,7 @@ public class OfficemartCompany extends Runner {
         steps2
                 .CompanyIncorrectCode(IncorrectCode1)
                 .CompanyButton();
-        sleep(4000);
+
     }
 
     @Test
@@ -246,7 +246,7 @@ public class OfficemartCompany extends Runner {
         steps2
                 .CompanyIncorrectCode2(IncorrectCode2)
                 .CompanyButton();
-        sleep(3000);
+
     }
     @Test
     @Description("Test Case N29 The field should no longer be red")
@@ -266,7 +266,7 @@ public class OfficemartCompany extends Runner {
         steps2
                 .CompanyCorrectCode(CorrectCode)
                 .CompanyButton();
-        sleep(3000);
+
     }
     @Test
     @Description("Test Case N30 The field should no longer be red")
@@ -284,7 +284,7 @@ public class OfficemartCompany extends Runner {
                 .Continue();
         CompanySteps steps2 = new CompanySteps();
         steps2
-                .CompanyAddres(CompanyAdd);
+                .CompanyAddress(CompanyAdd);
         sleep(2000);
     }
     @Test
@@ -441,7 +441,7 @@ public class OfficemartCompany extends Runner {
         steps2
                 .CompanyInCorrectMail(InCorrectMailValue1);
         Assert.assertTrue(steps2.CompanyDate.is(Condition.visible));
-        sleep(4000);
+
     }
     @Test
     @Description("Test Case N39 The 'E-mail' field should remain red")
@@ -481,7 +481,7 @@ public class OfficemartCompany extends Runner {
         steps2
                 .CompanyName(CompanyValue)
                 .CompanyCorrectCode(CorrectCode)
-                .CompanyAddres(CompanyAdd)
+                .CompanyAddress(CompanyAdd)
                 .CompanyCorrectPhoneNumber(CompanyCorrectPhoneValue)
                 .CompanyCorrectDate(CorrectDateValue)
                 .CompanyInCorrectMail2(InCorrectMailValue3);
